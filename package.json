@@ -1,0 +1,23 @@
+{
+  "name": "paige-mom-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "browser-sync": "^2.26.7",
+    "express": "^4.16.3",
+    "mysql": "^2.16.0",
+    "mysql2": "^1.6.1",
+    "npm": "^6.10.1",
+    "path": "^0.12.7",
+    "request": "^2.88.0",
+    "sequelize": "^4.38.0"
+  }
+}
