@@ -8791,6 +8791,8 @@ textarea.form-control {
       width: 100%;
       margin-top: -20px;
       padding: 30px;
+      background-color: #fdf7ef;
+      border-bottom: 3px solid #c8c8c8;
     }
 
     .logo-img {
@@ -8801,7 +8803,7 @@ textarea.form-control {
     }
 
     .ftco-fixed .page-container {
-      padding: 20px !important;
+      padding: 15px 15px 0px 15px !important;
   }
 
 
@@ -8848,6 +8850,7 @@ textarea.form-control {
   max-width: 100%;
   width: 100%;
   overflow: auto;
+  padding: 20px;
 }
 
 .text-img {
@@ -8895,6 +8898,29 @@ textarea.form-control {
   font-size: 24px;
   color: #000;
   text-shadow: 2px 2px 4px #c8c8c8;
+}
+
+#jscriptContainer {
+  background-image: linear-gradient(#fdf7ef, #f4d4aa);
+}
+
+.learn-more-cont {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.learn-more-link {
+  font-size: 30px;
+  text-shadow: 2px 2px 4px #c8c8c8;
+  color: #000;
+}
+
+.learn-more-link:hover {
+  text-decoration: underline;
+  color: #ff8000;
 }
 
 
