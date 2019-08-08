@@ -38,7 +38,9 @@
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+  font-family: 'Cairo', sans-serif !important;
+}
 
 html {
   font-family: sans-serif;
@@ -56,13 +58,15 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff; }
+  background-color: #fff; 
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -4344,7 +4348,8 @@ button.close {
   -webkit-appearance: none; }
 
 .modal-open {
-  overflow: hidden; }
+  overflow-x: hidden !important;
+  overflow-y: scroll !important; }
 
 .modal {
   position: fixed;
@@ -4354,11 +4359,12 @@ button.close {
   left: 0;
   z-index: 1050;
   display: none;
-  overflow: hidden;
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;;
   outline: 0; }
   .modal-open .modal {
-    overflow-x: hidden;
-    overflow-y: auto; }
+  overflow-x: hidden !important;
+  overflow-y: scroll !important; }
 
 .modal-dialog {
   position: relative;
@@ -7275,8 +7281,9 @@ body {
   font-weight: 300;
   color: #737373; }
   body.menu-show {
-    overflow: hidden;
-    position: fixed;
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+    /* position: fixed; */
     height: 100%;
     width: 100%; }
 
@@ -7307,13 +7314,13 @@ h1, h2, h3, h4, h5,
   padding: 0;
   width: 50%;
   height: 100%;
-  background: #29bae4;
-  background: -moz-linear-gradient(45deg, #29bae4 0%, #ee76ad 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, #29bae4), color-stop(100%, #ee76ad));
+  /* background: #29bae4; */
+  /* background: -moz-linear-gradient(45deg, #29bae4 0%, #ee76ad 100%); */
+  /* background: -webkit-gradient(left bottom, right top, color-stop(0%, #29bae4), color-stop(100%, #ee76ad));
   background: -webkit-linear-gradient(45deg, #29bae4 0%, #ee76ad 100%);
   background: -o-linear-gradient(45deg, #29bae4 0%, #ee76ad 100%);
   background: -ms-linear-gradient(45deg, #29bae4 0%, #ee76ad 100%);
-  background: linear-gradient(45deg, #29bae4 0%, #ee76ad 100%);
+  background: linear-gradient(45deg, #29bae4 0%, #ee76ad 100%); */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#448ef6', endColorstr='#af05a9', GradientType=1 );
   z-index: 1002;
   visibility: hidden;
@@ -7392,7 +7399,8 @@ h1, h2, h3, h4, h5,
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
-    transform: scale(1); }
+    transform: scale(1);
+    position: fixed; }
   #colorlib-main-nav ul {
     padding: 0;
     margin: 0;
@@ -8138,7 +8146,8 @@ textarea.form-control {
     margin: 0 auto; }
 
 .ftco-overflow-hidden {
-  overflow: hidden; }
+  overflow-x: hidden !important;
+  overflow-y: scroll !important; }
 
 .padding-top-bottom {
   padding-top: 120px;
@@ -8715,3 +8724,191 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+    .page-container  {
+      background: (255,255,255,0);
+    }
+
+    #colorlib-main-nav {
+      background-color: #c8c8c8 !important;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    #colorlib-main-nav::after{
+      content: "";
+      background: url("../images/forest.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: 0.2;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+    }
+
+    .mission-statement {
+      padding-top: 25px;
+      width: 100%;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 400;
+      text-shadow: 2px 2px 4px #c8c8c8;
+    }
+
+    .namaste {
+      font-size: 36px;
+      font-weight: 200;
+      color: #40e0d0;
+      text-shadow: 2px 2px 4px #c8c8c8;
+    }
+
+    .horse-banner-container {
+      min-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+
+    .horse-banner-img {
+      width: 100%;
+      height: auto;
+    }
+
+    #homeTitle {
+      font-size: 24px;
+      color: #fff;
+      text-shadow: 2px 2px 8px #000;
+    }
+
+    .logo-holder {
+      width: 100%;
+      height: auto;
+    }
+
+    .top-logo-cont {
+      width: 100%;
+      margin-top: -20px;
+      padding: 30px;
+    }
+
+    .logo-img {
+      max-width: 200px !important;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .ftco-fixed .page-container {
+      padding: 20px !important;
+  }
+
+
+.owl-carousel.home-slider .slider-item .slider-text h1 {
+  text-shadow: 2px 2px 8px #000;
+  font-size: 36px;
+}
+
+.flex-container-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio-row {
+  display: block;
+  padding: 20px;
+}
+
+.header-row-left {
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+
+.section-header {
+  font-size: 40px;
+  font-weight: 600;
+  color: #40e0d0;
+  text-shadow: 2px 2px 4px #c8c8c8;
+  text-decoration: underline;
+}
+
+.text-body-img {
+  max-width: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.text-img {
+  width: 55%;
+  height: auto;
+  box-shadow: 2px 2px 8px #c8c8c8;
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.bio-txt {
+  font-weight: 400;
+  color: #000;
+}
+
+.flex-img-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0 4px;
+}
+
+.flex-img-column {
+  flex: 50% !important;
+  max-width: 50% !important;
+  padding: 0 4px !important;
+}
+
+.flex-img-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  box-shadow: 2px 2px 8px #c8c8c8;
+}
+
+.product-head {
+  font-size: 30px;
+
+}
+
+.learn-more-link a p{
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  color: #000;
+  text-shadow: 2px 2px 4px #c8c8c8;
+}
+
+
+
+@media (max-width: 800px) {
+  .flex-img-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .flex-img-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

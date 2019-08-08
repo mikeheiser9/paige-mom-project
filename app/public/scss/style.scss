@@ -30,7 +30,8 @@ body {
 	font-weight: 300;
 	color: lighten($black,45%);
 	&.menu-show {
-		overflow: hidden;
+		overflow-x: hidden !important;
+		overflow-y: scroll !important;
 		position: fixed;
 		height: 100%;
 		width: 100%;
